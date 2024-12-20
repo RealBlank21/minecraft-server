@@ -1,0 +1,15 @@
+[service]
+name = "minecraft-server"
+
+[env]
+# Set necessary environment variables
+EULA = "true" # Required by Minecraft server to indicate acceptance of the EULA
+JAVA_OPTS = "-Xmx1024M -Xms1024M" # Adjust memory settings as needed
+
+[build]
+# If you have a specific build step, you can define it here
+builder = "null" # No build process needed for a simple jar file
+
+[start]
+# Specify the startup command
+cmd = "java $JAVA_OPTS -jar server.jar nogui"

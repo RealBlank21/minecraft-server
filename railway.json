@@ -1,0 +1,11 @@
+{
+    "build": {
+      "env": {
+        "EULA": "true",
+        "JAVA_OPTS": "-Xmx1024M -Xms1024M"
+      }
+    },
+    "start": {
+      "cmd": "java $JAVA_OPTS -jar your-minecraft.jar nogui"
+    }
+  }
