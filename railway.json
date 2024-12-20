@@ -1,9 +1,0 @@
-{
-    "name": "minecraft-server",
-    "build": {
-      "dockerfile": "Dockerfile"
-    },
-    "deploy": {
-      "startCommand": "run.sh"
-    }
-  }
